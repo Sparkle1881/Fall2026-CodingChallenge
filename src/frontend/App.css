@@ -1,0 +1,9 @@
+#imageBox {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100vw;
+  height: 90vh;
+  position: absolute;
+  top: clamp(50px,7vh,90px);
+  flex-wrap: wrap;
+}

@@ -1,0 +1,32 @@
+#imgCard {
+    width: 10vw;
+    height: 12vw;
+    background-color: #dddddd;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #888888;
+    overflow: hidden;
+    vertical-align: middle;
+    align-items: center;
+    #display: flex;
+    justify-content: center;
+    min-width: 200px;
+    text-align: center;
+    font-size: 1vw;
+}
+
+.image {
+    width: 10vw;
+    #display: inline;
+}
+
+.imageTitle {
+    text-align: center;
+    position: relative;
+    top: -1vw;
+}
+
+.imageSource {
+    text-align: right;
+    position: relative;
+    top: -2vw;
+}

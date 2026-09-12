@@ -1,0 +1,9 @@
+#backgroundBar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: clamp(40px,5vh,60px);
+    background-color: #dddddd;
+    box-shadow: 0 0 5px #888888;
+}
