@@ -1,9 +1,33 @@
+#ui {
+    display: inline;
+    color: black;
+    font-size: clamp(6px,.5vw,50px);
+}
+
 #backgroundBar {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: calc(100vw - 20px);
     height: clamp(40px,5vh,60px);
     background-color: #dddddd;
     box-shadow: 0 0 5px #888888;
+}
+
+#homeButton {
+    position: absolute;
+    top: 0vh;
+    left: 5vw;
+}
+
+#profileButton {
+    position: absolute;
+    top: 0vh;
+    left: 40vw;
+}
+
+#settingsButton {
+    position: absolute;
+    top: 0vh;
+    right: 10vw;
 }
