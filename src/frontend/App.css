@@ -1,9 +1,18 @@
+#app {
+  overflow: hidden;
+  scrollbar-width: none;
+}
+
 #imageBox {
   display: flex;
   justify-content: space-evenly;
-  width: 100vw;
+  width: 98vw;
   height: 90vh;
   position: absolute;
   top: clamp(50px,7vh,90px);
+  left: 1vw;
   flex-wrap: wrap;
+  gap: clamp(12px,1vw,40px);
+  overflow-x: hidden;
+  scrollbar-width: none;
 }

@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from '../logo.svg';
 import './App.css';
 import {Image} from "./components/Image";
 import path from './assets/testimggalaxy.jpg';
@@ -24,9 +23,10 @@ function App() {
     //   </header>
     // </div>
       <>
-        <div id="test">
+        <div id="app">
             <Ui></Ui>
             <div id="imageBox">
+                <Image image={{source:"2",tags:["galaxy","space"],id:"0",description:"galaxy test image",title:"Galaxy",src:path}}></Image>
                 <Image image={{source:"2",tags:["galaxy","space"],id:"0",description:"galaxy test image",title:"Galaxy",src:path}}></Image>
                 <Image image={{source:"2",tags:["galaxy","space"],id:"0",description:"galaxy test image",title:"Galaxy",src:path}}></Image>
                 <Image image={{source:"2",tags:["galaxy","space"],id:"0",description:"galaxy test image",title:"Galaxy",src:path}}></Image>

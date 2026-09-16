@@ -1,0 +1,12 @@
+#searchInput {
+    position: absolute;
+    top: 2vh;
+    left: 55vw;
+    width: 20vw;
+}
+#searchButton {
+    position: absolute;
+    top: 2vh;
+    right: 22vw;
+    width: 3vw;
+}
