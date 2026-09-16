@@ -1,5 +1,5 @@
+import { SearchBar } from "./SearchBar";
 import './ui.css';
-import {SearchBar} from "./SearchBar";
 
 export function Ui() {
     return (
