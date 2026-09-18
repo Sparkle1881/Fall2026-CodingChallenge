@@ -1,6 +1,6 @@
 #imgCard {
     width: clamp(100px,10vw,200px);
-    height: 12vw;
+    height: clamp(110px,12vw,280px);
     background-color: #dddddd;
     border-radius: 5px;
     box-shadow: 0 0 5px #888888;
@@ -9,7 +9,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-size: 1vw;
+    font-size: clamp(8px,1vw,100px);
 }
 
 .image {

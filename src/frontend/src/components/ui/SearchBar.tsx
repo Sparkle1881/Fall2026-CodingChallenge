@@ -6,12 +6,13 @@ export function SearchBar() {
     return(
         <>
             <form>
-                <input id="searchInput" ref={searchRef}/>
+                <input type="text" id="searchInput" ref={searchRef}/>
                 <input id="searchButton" type="submit" value="Search" onClick={async () => {
                     try {
-                        const response = await fetch('http://localhost:5001/api');
+                        const sending = prompt("Search: ")
+                        const response = await fetch('http://localhost:5001/api/photos/'+sending);
                         const data = await response.json();
-                        alert(data);
+                        alert(data.message);
                     }
                     catch (error) {
                         console.error(error);
@@ -20,13 +21,7 @@ export function SearchBar() {
                 }
                 }/>
             </form>
-            <button
-                // onClick = {async ()=>{
-                //     const res = await fetch('http://localhost:5001/api/hello');
-                //     const data = await res.json();
-                //
-                // }}
-            ></button>
+            <button></button>
         </>
     )
 }
