@@ -1,16 +1,20 @@
 import './searchBar.css';
-import { useRef } from 'react';
+// import { useRef } from 'react';
 
 export function SearchBar() {
-    const searchRef = useRef(null);
+    // const searchRef = useRef(null);
     return(
         <>
             <form>
-                <input type="text" id="searchInput" ref={searchRef}/>
+                {/*<input type="text" id="searchInput" ref={searchRef}/>*/}
                 <input id="searchButton" type="submit" value="Search" onClick={async () => {
                     try {
-                        const sending = prompt("Search: ")
+                        const sending = prompt("Search: ");
+                        alert("searching");
+                        const test = await fetch('http://localhost:5001/api')
+                        alert("test: " + await test.json());
                         const response = await fetch('http://localhost:5001/api/photos/'+sending);
+                        alert("queried");
                         const data = await response.json();
                         alert(data.message);
                     }

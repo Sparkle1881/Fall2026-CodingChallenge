@@ -6,4 +6,5 @@
   position: absolute;
   top: clamp(50px,7vh,90px);
   flex-wrap: wrap;
+  font-family: arial, sans-serif;
 }
